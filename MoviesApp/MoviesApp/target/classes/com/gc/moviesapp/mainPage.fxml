@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669999;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gc.moviesapp.MainController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="94.0" prefWidth="14.0" />
+            <Label alignment="CENTER" prefHeight="81.0" prefWidth="601.0" text="Movie finder">
+               <font>
+                  <Font name="Bauhaus 93" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="240.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="30.0" />
+            <Label text="Movie name:">
+               <font>
+                  <Font name="Segoe UI Black" size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="41.0" />
+            <TextField fx:id="textFieldSearch">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="51.0" prefWidth="53.0" />
+            <Button mnemonicParsing="false" onAction="#clickButtonSearch" prefHeight="30.0" prefWidth="66.0" text="Search">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="272.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="217.0" prefWidth="30.0" />
+            <VBox fx:id="vboxOptions" prefHeight="224.0" prefWidth="538.0" style="-fx-background-color: #4db3b3;">
+               <children>
+                  <ScrollPane fx:id="scrollPane" prefHeight="226.0" prefWidth="538.0" style="-fx-background-color: #4db3b3;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                    </content>
+                  </ScrollPane>
+               </children></VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="41.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="41.0" />
+            <Label fx:id="labelMoviesFound" text="Movies found: 0">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
